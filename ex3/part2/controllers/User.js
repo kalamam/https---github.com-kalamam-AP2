@@ -1,6 +1,7 @@
 const userService = require('../services/User');
 
 const createUser = async (req, res) => {
+    console.log('111');
     res.json(await userService.createUser(req.body.username,req.body.password, req.body.displayName, req.body.profilePic));
 }
 const getUserById = async (req, res) => {

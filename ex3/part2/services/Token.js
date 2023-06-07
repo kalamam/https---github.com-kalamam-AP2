@@ -1,4 +1,4 @@
-const Token = require('..models/Token')
+const Token = require('../models/Token')
 
 const createToken = async (username, password) => {
     const token = new Token({username, password});
